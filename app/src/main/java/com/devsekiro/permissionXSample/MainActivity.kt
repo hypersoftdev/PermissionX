@@ -58,25 +58,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
     // Sample usage for multiple permissions with SDK-specific handling
     @SuppressLint("InlinedApi")
     private fun askMultiplePermissions() {
-//        val sdkPermissionsList = listOf(
-//            (Build.VERSION_CODES.TIRAMISU..Int.MAX_VALUE) to arrayOf(
-//                android.Manifest.permission.CAMERA,
-//                android.Manifest.permission.READ_MEDIA_IMAGES,
-//                android.Manifest.permission.READ_MEDIA_VIDEO,
-//                android.Manifest.permission.READ_MEDIA_AUDIO,
-//                android.Manifest.permission.POST_NOTIFICATIONS
-//            ),
-//            (Build.VERSION_CODES.Q..Build.VERSION_CODES.S) to arrayOf(
-//                android.Manifest.permission.CAMERA,
-//                android.Manifest.permission.READ_EXTERNAL_STORAGE,
-//                android.Manifest.permission.ACCESS_MEDIA_LOCATION
-//            ),
-//            (Int.MIN_VALUE..Build.VERSION_CODES.P) to arrayOf(
-//                android.Manifest.permission.CAMERA,
-//                android.Manifest.permission.READ_EXTERNAL_STORAGE
-//            )
-//        )
-
         val sdkPermissionsList = listOf(
             ItemPermissionX(
                 intRange = (Build.VERSION_CODES.TIRAMISU..Int.MAX_VALUE),
