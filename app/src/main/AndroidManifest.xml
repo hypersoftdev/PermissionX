@@ -23,7 +23,6 @@
     <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
 
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -37,7 +36,7 @@
         tools:targetApi="31">
 
         <activity
-            android:name="com.devsekiro.permissionXSample.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

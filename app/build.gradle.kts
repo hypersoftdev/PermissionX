@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.devsekiro.permissionXSample"
+    namespace = "com.hypersoft.permissions"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.devsekiro.permissionXSample"
+        applicationId = "com.hypersoft.permissions"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -24,11 +24,12 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
+
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
 
     buildFeatures {
@@ -44,9 +45,6 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation(project(":permissionX"))
+    implementation(project(":permissionx123"))
 }
