@@ -23,4 +23,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "PermissionX"
 include(":app")
-include(":permissionx123")
+include(":permissionx")

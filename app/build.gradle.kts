@@ -46,5 +46,5 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
 
-    implementation(project(":permissionx123"))
+    implementation(project(":permissionx"))
 }
