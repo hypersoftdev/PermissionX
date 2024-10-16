@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/hypersoftdev/PermissionX.svg)](https://jitpack.io/#hypersoftdev/PermissionX)
+
 # PermissionX
 
 Manage All Type of Permissions
@@ -17,7 +19,7 @@ repositories {
 
 ### Step B: Add Dependencies
 
-In your app-level **build.gradle** file, add the library dependency. Use the latest version: 
+In your app-level **build.gradle** file, add the library dependency. Use the latest version: [![](https://jitpack.io/v/hypersoftdev/PermissionX.svg)](https://jitpack.io/#hypersoftdev/PermissionX)
 
 Groovy Version
 ```
