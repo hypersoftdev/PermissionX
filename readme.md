@@ -30,7 +30,7 @@ Kts Version
  implementation("com.github.hypersoftdev:PermissionX:x.x.x")
 ```
 
-# How to Use
+## How to Use
 
 
 ### For Single Permission
