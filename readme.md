@@ -30,6 +30,68 @@ Kts Version
  implementation("com.github.hypersoftdev:PermissionX:x.x.x")
 ```
 
+## How to Use
+
+
+### For Single Permission
+```
+  val singlePermission = listOf(
+            ItemPermissionX(
+                intRange = (Int.MIN_VALUE..Int.MAX_VALUE),
+                permissionList = arrayListOf(Manifest.permission.CAMERA),
+            )
+        )
+```
+
+### For Multiple Permission
+```
+val multiplePermissionsList = listOf(
+            ItemPermissionX(
+                intRange = (Build.VERSION_CODES.TIRAMISU..Int.MAX_VALUE),
+                permissionList = arrayListOf(
+                    Manifest.permission.CAMERA,
+                    Manifest.permission.READ_MEDIA_IMAGES,
+                    Manifest.permission.READ_MEDIA_VIDEO,
+                    Manifest.permission.READ_MEDIA_AUDIO,
+                    Manifest.permission.POST_NOTIFICATIONS
+                ),
+
+            ),
+            ItemPermissionX(
+                intRange = (Build.VERSION_CODES.Q..Build.VERSION_CODES.S),
+                permissionList = arrayListOf(
+                    Manifest.permission.CAMERA,
+                    Manifest.permission.READ_EXTERNAL_STORAGE,
+                    Manifest.permission.ACCESS_MEDIA_LOCATION
+                ),
+
+            ),
+            ItemPermissionX(
+                intRange = (Int.MIN_VALUE..Build.VERSION_CODES.P),
+                permissionList = arrayListOf(
+                    Manifest.permission.CAMERA,
+                    Manifest.permission.READ_EXTERNAL_STORAGE
+                ),
+            )
+        )
+```
+
+We can give different sdk range for asking different permission for variety of sdk versions
+
+```
+ permissionManager.requestPermissionsByDynamicSDK(
+            sdkPermissionsList = permissionsToAsk, //Replace permissionsToAsk with singlePermission or multiplePermissionsList
+        ) { allGranted, deniedPermissions ->
+            if (allGranted) {
+                // All permissions granted for this SDK version
+                Log.d("Permissions", "All granted")
+            } else {
+                // Handle denied permissions
+                Log.d("Denied Permissions", deniedPermissions.toString())
+            }
+        }
+```
+
 # Acknowledgements
 
 This work would not have been possible without the invaluable contributions of [Abdul Moiz](https://github.com/devsekiro). His expertise, dedication, and unwavering support have been instrumental in bringing this project to fruition.
