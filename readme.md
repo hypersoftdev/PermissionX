@@ -2,7 +2,7 @@
 
 # PermissionX
 
-PermissionX is a library made to make permission request similar across different android versions. The Main purpose of permissionX is to allow user to define ranges in which user can ask different permission for different android version. e.g Read external storage permission for sdk version 32 and below and read media for above that. If a permission is to be asked after certain android version (e.g. post notification permission) user can easily request them without having to include different checks and managing them.
+PermissionX is a versatile library designed to streamline permission requests across various Android versions, ensuring a consistent and simplified approach. Its primary purpose is to enable developers to define version-specific ranges for requesting permissions, such as differentiating between "Read External Storage" for SDK version 32 and below, and "Read Media" for versions above. Additionally, PermissionX facilitates the handling of permissions introduced in newer Android versions, such as "Post Notification," allowing seamless requests without the need for manual version checks or complex management. This makes it an invaluable tool for developers aiming to enhance code maintainability and ensure compatibility with evolving Android APIs.
 
 ## Gradle Integration
 
