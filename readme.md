@@ -2,7 +2,7 @@
 
 # PermissionX
 
-Manage All Type of Permissions
+PermissionX simplifies Android permission requests by handling version-specific checks, like "read external storage" for SDK 32 and below or "read media" for higher versions, and managing newer permissions like "post notification" effortlessly.
 
 ## Gradle Integration
 
